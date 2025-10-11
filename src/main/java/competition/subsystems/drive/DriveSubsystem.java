@@ -53,7 +53,6 @@ public boolean getPrecisionModeActive() {
         }
         frontLeft.setPower(leftPower);
         frontRight.setPower(rightPower);
-        // TODO: Add code to set the right motors to the rightPower value. (donee)
     }
 
 

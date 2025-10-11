@@ -33,4 +33,9 @@ public class TogglePrecisionDriveCommand extends BaseCommand {
         // In all of these cases you'll need to have the mode somehow affect the
         // TankDrive method.
     }
+
+    @Override
+    public boolean isFinished() {
+        return true;
+    }
 }
