@@ -29,14 +29,18 @@ public class DriveToPositionCommand extends BaseCommand {
 
     @Override
     public void execute() {
+        //starts at 0, stops at 300. Slowly goes up by 1 (momentum) << we wanna remove it, so we can stop exactly on 300
         // Here you'll need to figure out a technique that:
         // - Gets the robot to move to the target position
-        // - Hint: use pose.getPosition() to find out where you are
-        // - Gets the robot stop (or at least be moving really really slowly) at the
-        // target position
+        // - Gets the robot stop (or at least be moving really really slowly) at the target position
+        //y=mx , power= p * error - d * speed d = deriative, speed = "velocity", error = displacement p, = proportion
+        //if(isPrecisionModeActive) {
+            //leftPower = leftPower * 0.1;
+           // rightPower = rightPower * 0.1; //move very slowly to target positistion
+        }
+        //stop when you reach target
+    }//cordinates or target/end position in the brackets
 
-        // How you do this is up to you. If you get stuck, ask a mentor or student for
-        // some hints!
         drive.tankDrive(0.25,0.25);
         pose.getPosition();
     }
