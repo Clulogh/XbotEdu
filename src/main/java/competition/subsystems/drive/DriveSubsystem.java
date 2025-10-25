@@ -86,6 +86,7 @@ public boolean getPrecisionModeActive() {
     public double getLeftTotalDistance() {
         // TODO: Auto-generated method stub
         return 0;
+
     }
 
     @Override
