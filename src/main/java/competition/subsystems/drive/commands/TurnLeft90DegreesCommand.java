@@ -43,4 +43,13 @@ public class TurnLeft90DegreesCommand extends BaseCommand {
         // higher distance error higher power,more power less speed ||| power = error - speed
         drive.tankDrive(-power, power);
 
-    }}
+
+    }
+
+    @Override
+    public boolean isFinished() {
+        // Modify this to return true once you have met your goal,
+        // and you're moving fairly slowly (ideally stopped)
+        return false;
+    }
+}
