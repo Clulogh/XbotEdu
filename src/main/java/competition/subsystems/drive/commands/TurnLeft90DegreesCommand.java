@@ -48,8 +48,7 @@ public class TurnLeft90DegreesCommand extends BaseCommand {
 
     @Override
     public boolean isFinished() {
-        // Modify this to return true once you have met your goal,
-        // and you're moving fairly slowly (ideally stopped)
+
         return false;
     }
 }
